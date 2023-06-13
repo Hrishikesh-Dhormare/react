@@ -1,3 +1,5 @@
+import "./App.css";
+
 
 function App() {
   let str ="Student of CDAC"
@@ -5,6 +7,7 @@ function App() {
   let user2 ={id:8, name:"Mayur", class:"DBDA"}
   return(
     <>
+      <div className="App-header">
       <h1 style={{color:"red"}}>{str}</h1>
       <h3>ID:{user.id}</h3>
       <h3>Name:{user.name}</h3>
@@ -13,6 +16,7 @@ function App() {
       <h3>ID:{user2.id}</h3>
       <h3>Name:{user2.name}</h3>
       <h3>Class:{user2.class}</h3>
+      </div>
     </>
   );
 }
