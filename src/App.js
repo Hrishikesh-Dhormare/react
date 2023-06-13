@@ -1,29 +1,16 @@
-import logo from "./logo.svg";
-import "./App.css";
-
 function App() {
-  let sty = { color: "red", background: "blue" };
-  return (
+  let str = "Basic variable binding"
+  let pi= 3.14;
+  let active = true;
+
+
+  return(
     <>
-      <h1 style={{ background: "black", color: "white" }}>Hello</h1>
-      <h1 style={sty}>Good Morning</h1>
-      <Para/>
-      <Para/>
-      <Para/>
+      <h1>{str}</h1>
+      <h2>{pi}</h2>
+      <h3>{!active? "True": "False"}</h3>
     </>
-  );
+  )
 }
 
-function Para() {
-  return (
-    <p style={{border:"solid", padding:"5", background:"silver"}}>
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos
-      laborum, iusto asperiores deserunt totam a accusamus alias sequi, animi
-      quas expedita impedit nulla eligendi earum id! Sequi atque non
-      praesentium?
-    </p>
-  );
-}
-
-// export Para;
 export default App;
