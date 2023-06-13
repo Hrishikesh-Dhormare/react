@@ -6,9 +6,11 @@ function App() {
   return(
     <>
       <h1>{str}</h1>
-      <h1>ID:{user.id}</h1>
-      <h1>Name:{user.name}</h1>
-      <h1>Class:{user.class}</h1>
+      <h3>ID:{user.id}</h3>
+      <h3>Name:{user.name}</h3>
+      <h3>Class:{user.class}</h3>
     </>
   );
 }
+
+export default App;
