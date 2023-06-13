@@ -1,17 +1,14 @@
-function App() {
-  let str = "Basic variable binding"
-  let pi= 3.14;
-  let isUserLogin = true;
 
+function App() {
+  let str ="Student of CDAC"
+  let user= { id:7, name:"Hrishikesh", class:"PG-DAC"}
 
   return(
     <>
       <h1>{str}</h1>
-      <h2>{pi}</h2>
-      <h3>{isUserLogin && <h1>Welcome CDAC</h1>}</h3>
-      <h3>{isUserLogin && <p>Try Again</p>}</h3>
+      <h1>ID:{user.id}</h1>
+      <h1>Name:{user.name}</h1>
+      <h1>Class:{user.class}</h1>
     </>
-  )
+  );
 }
-
-export default App;
